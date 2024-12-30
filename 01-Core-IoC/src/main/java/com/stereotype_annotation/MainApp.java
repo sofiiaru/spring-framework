@@ -7,5 +7,7 @@ public class MainApp {
     public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+
+        context.getBean(Java.class).getTeachingHours();
     }
 }
