@@ -12,7 +12,7 @@ public class ConfigCar {
         c.setMake("Honda");
         return c;
     }
-
+    //this is also an example of dependency injection where Spring container injects objects into other objects or dependencies
     @Bean
     Person person() {
         Person p = new Person();
