@@ -15,6 +15,9 @@ public class MainApp {
         String s = container.getBean(String.class);
         System.out.println(s);
 
+        PartTimeMentor ptm = container.getBean("p1", PartTimeMentor.class);
+        ptm.createAccount();
+
 
 
     }
