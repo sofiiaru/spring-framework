@@ -12,6 +12,7 @@
         <module>01-Core-IoC</module>
         <module>02-Core-Wiring</module>
         <module>03-Core-DI</module>
+        <module>04-Abstraction</module>
     </modules>
 
     <properties>

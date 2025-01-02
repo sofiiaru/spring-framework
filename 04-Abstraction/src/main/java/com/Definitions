@@ -1,0 +1,9 @@
+Definitions
+
+Service - refers to the objects implementing use cases
+
+Repository - refers to teh objects working directly with database
+
+Proxy - refers to the objects whose responsibilities are to establish communication with something outside the app
+
+Model/Entity - refers to teh objects that model the data the app uses.
