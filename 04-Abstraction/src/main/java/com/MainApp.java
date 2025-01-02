@@ -16,5 +16,12 @@ public class MainApp {
 
         CommentService commentService = context.getBean(CommentService.class);
         commentService.publishComment(comment);
+
+        CommentService cs2 = context.getBean(CommentService.class);
+
+        //Showing that  same object is used - singleton scope
+        System.out.println(commentService);
+        System.out.println(cs2);
+        System.out.println(commentService == cs2);
     }
 }

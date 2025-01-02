@@ -9,3 +9,16 @@ Proxy - refers to the objects whose responsibilities are to establish communicat
 Model/Entity - refers to teh objects that model the data the app uses.
 
 Config - all configs classes
+
+*******************************************************************************
+How Spring manages Beans? through scopes
+
+Spring bean scopes:
+- Singleton* - default; spring creates a singleton bean when it loads the context and assigns jthe bean a name (Bean ID).
+ It is called singleton because you always get the same instance when you refer to a specific bean.
+ Singleton concept allows multiple instances of the same type. For Spring, singleton means unique per name,
+ but not uniques per app
+
+- Prototype*
+- Request
+- Session
