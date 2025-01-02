@@ -19,6 +19,13 @@ Spring bean scopes:
  Singleton concept allows multiple instances of the same type. For Spring, singleton means unique per name,
  but not uniques per app
 
-- Prototype*
+- Prototype* - creates new object of same type avery time getBean() is called
 - Request
 - Session
+
+*********************************************************************************
+Eager and Lazy Instantiation
+
+Spring creates all singleton beans when it initializes the context ---> default behavior "eager instantiation"
+
+Spring creates each instance the first time when someone refers to the bean --> "lazy instantiation" @Lazy
