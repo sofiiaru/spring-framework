@@ -1,6 +1,6 @@
-package com.repository;
+package com.cydeo.repository;
 
-import com.model.Comment;
+import com.cydeo.model.Comment;
 import org.springframework.stereotype.Component;
 
 @Component

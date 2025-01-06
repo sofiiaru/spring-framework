@@ -1,6 +1,7 @@
-package com.proxy;
+package com.cydeo.proxy;
 
-import com.model.Comment;
+
+import com.cydeo.model.Comment;
 
 public interface CommentNotificationProxy {
 
