@@ -1,0 +1,38 @@
+Thymeleaf Theory
+
+Template Engine - it is used to display data in the view that controller sends.
+- provides a good support serving HTML5 in web apps
+- to integrate thymeleaf with spring boot we need to add: spring-boot-starter-thymeleaf
+- to convert HTML file to Thymeleaf we need to add attribute xmlns:th="http://www.thymeleaf.org"
+
+Displaying values: th:text=${value}
+
+Links: th:href="@{link here}"
+
+Adding parameters to links: th:href="@{endpoint(parameter)}  // @{car/buy(year=2019)}
+
+Iteration: th:each   Ex: <li th:each="car : ${cars}" th:text="${car}" ></li>
+
+Adding CSS, JS, Images: the default dir is src/main/resources/static
+
+< link th:href="@{path to css file}" rel="stylesheet"/>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+<img th:src="@{images/java.png}">
+
+
+Fragments: reusable common parts in pages Ex: header, footer etc.
+
+th: replace - replaces current tag with the tag defining the fragment
+
+fragment file:
+index.html
+<div> th:fragment="main-menu">
+ a bunch of code here
+ <a href="https://www.google.com">Google</a>
+</div>
+
+
+main file welcome.html
+<div th:replace="/fragments/index :: main-menu"></div>
+
+
